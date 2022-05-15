@@ -15,24 +15,29 @@
   <tr>
     <th>ID</th>
     <th>Category</th> 
-    <th>Desciption</th>
+    <th>Description</th>
     <th>N-M</th>
     <th>FT-LBS</th>
     <th>IN-LBS</th>
     <th>Comments</th>
   </tr>
+  <% results.forEach(function(r) { %>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td> 
-    <td>Mexico</td>
+    <td><%= r.id %></td>
+    <td><%= r.category %></td> 
+    <td><%= r.description %></td>
+    <td><%= r.n_m %></td>
+    <td><%= r.ft_lbs %></td>
+    <td><%= r.in_lbs %></td>
+    <td><%= r.comments %></td>
   </tr>
 </table>
 
-<ul>
+<!-- <ul>
     <% results.forEach(function(r) { %>
         <li><%= r.id %> - <%= r.category %> - <%= r.description %> - <%= r.n_m %> - <%= r.ft_lbs %> - <%= r.in_lbs %> - <%= r.comments %></li>
     <% }); %>
-</ul>
+</ul> -->
 
 </div>
 

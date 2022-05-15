@@ -13,7 +13,7 @@
 
 <ul>
     <% results.forEach(function(r) { %>
-        <li><%= r.ts.id %> - <%= r.cat.category %></li>
+        <li><%= r.id %> - <%= r.category %> - <%= r.description %> - <%= r.n_m %> - <%= r.ft_lbs %> - <%= r.in_lbs %> - <%= r.comments %></li>
     <% }); %>
 </ul>
 

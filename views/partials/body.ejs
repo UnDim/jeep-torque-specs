@@ -1,0 +1,47 @@
+<div class="container">
+    <!-- <div class="alert alert-info text-center" role="alert">
+      To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs" class="alert-link">Getting Started on Heroku with Node.js</a> tutorial.
+    </div> -->
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <h3><span i class="fa-solid fa-circle-info"></i></span> How does this application work</h3>
+        <ul>
+          <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
+  
+          <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/main/package.json">package.json</a>, creating a deployable slug.</li>
+          <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
+          <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3><span class="fa fa-search"></span> Search for Torque Specs</h3>
+        <div class="row">
+            <div class="col-lg-4">
+                Jeep Model
+                <select class="combobox form-control" name="horizontal" required="required">
+                    <option value="" selected="selected">Select a Model</option>
+                    <option value="TJ">TJ</option>
+                    <option value="JK">JK</option>
+                    <option value="JL">JL</option>
+                    <option value="JT">JT</option>
+                </select> 
+            </div>
+            <div class="col-lg-6">
+                Category 
+                <select class="combobox form-control" name="horizontal" required="required">
+                    <option value="" selected="selected">Select a Category</option>
+                    <option value="Brakes">Brakes</option>
+                    <option value="Body">Body</option>
+                    <option value="Cooling">Cooling</option>
+                </select>
+            </div>
+            <div class="col-lg-2">
+                <span class="input-group-text border-0" id="search-addon">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+        </div>
+      </div>
+    </div> <!-- row -->
+  </div>

@@ -16,13 +16,12 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-  .get('/db', async (req, res) => {
+  .get('/specs', async (req, res) => {
     try {
       const client = await pool.connect();
       const result = await client.query('select cat.category, ts.description, ts.n_m, ts.ft_lbs, ts.in_lbs, ts.comments, mod.model from torque_specs as ts join categories as cat on ts.category_id = cat.id join models as mod on ts.model_id = mod.id;');
       const results = { 'results': (result) ? result.rows : null};
-      res.render('pages/db', results );
-      // res.send('/pages/body', results);
+      res.render('pages/specs', results );
       client.release();
     } catch (err) {
       console.error(err);
